@@ -4,11 +4,11 @@ sequenceDiagram
     participant server
     
     browser->>server: POST https://fullstack-exampleapp.herokuapp.com/new_note
+Note right of browser: The server creates an object from the new note and inserts it into a file containing the notes
     activate server
     server-->>browser: Status code 302
     deactivate server
 
-Note right of browser: The server creates an object from the new note and insirts it into a file containing the notes
     
     browser->>server: GET https://fullstack-exampleapp.herokuapp.com/notes
     activate server
