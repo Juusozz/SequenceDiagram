@@ -1,3 +1,5 @@
+A sequence diagram depicting the communication between browser and server when adding a new note to https://studies.cs.helsinki.fi/exampleapp/notes
+
 ```mermaid
 sequenceDiagram
     participant browser
